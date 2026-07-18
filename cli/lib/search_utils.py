@@ -18,7 +18,7 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 DATA_PATH = os.path.join(PROJECT_ROOT, "data", "movies.json")
 STOPWORDS_PATH = os.path.join(PROJECT_ROOT, "data", "stopwords.txt")
 CACHE_DIR = os.path.join(PROJECT_ROOT, "cache")
-
+GOLDEN_DATASET_PATH = os.path.join(PROJECT_ROOT, "data", "golden_dataset.json")
 
 _PUNCTUATION_TABLE = str.maketrans("", "", string.punctuation)
 _STOPWORDS: set[str] | None = None
